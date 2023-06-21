@@ -1,0 +1,107 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-container {
+  flex-grow: 1;
+}
+
+.app-container {
+  position: relative;
+}
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  
+  
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  /* filter: blur(2px); */
+  
+  
+}
+
+/* .content-container {
+  position: relative;
+  z-index: 1;
+} */
+
+/* .content {
+  padding: 20px;
+  color: #fff;
+} */
+.navbar-fixed {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  overflow: hidden;
+  /* Adjust the height value as needed */
+}
+
+@media (max-width: 576px) {
+  .navbar-fixed {
+    height: 60px;
+    /* Adjust the height value for smaller screens */
+  }
+}
+@media (max-width: 576px) {
+  .experience-tesla-heading {
+    font-size: 3.2rem !important;
+    
+  }
+    .first-p {
+      font-size: 1.8rem !important;
+    }
+        .second-p {
+          font-size: 1.1rem !important;
+        }
+.ps-3 img {
+  width: 50px !important;
+  height: 70px;
+  padding-top: 15px;
+  margin-right: 0;
+}
+
+.tesla-name img {
+  width: 70px !important;
+  height: 80px;
+  padding-top: 3px;
+  margin-right: 50px;
+  margin-left: 0;
+}
+
+}
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+.tesla-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
