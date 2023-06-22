@@ -6,7 +6,7 @@ import videoSource from './accessories/videoplayback.mp4'
 function App() {
  return (
   
-     <div className="content-container mt-5">
+     <div className="content-containerVideo mt-5">
       <div className="video-background">
         <video autoPlay muted loop>
           <source src={videoSource} type="video/mp4" />
