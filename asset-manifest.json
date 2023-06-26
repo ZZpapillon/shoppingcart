@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shoppingcart/static/css/main.ed2d624b.css",
-    "main.js": "/shoppingcart/static/js/main.bdf6888c.js",
+    "main.css": "/shoppingcart/static/css/main.93cf92c5.css",
+    "main.js": "/shoppingcart/static/js/main.9a4a69b4.js",
     "static/media/videoplayback.mp4": "/shoppingcart/static/media/videoplayback.e69b4a183036d84a66a2.mp4",
     "static/media/contact.mp4": "/shoppingcart/static/media/contact.20fb5494164d333898ed.mp4",
     "static/media/about.mp4": "/shoppingcart/static/media/about.933e420b025e0153f02e.mp4",
@@ -15,11 +15,11 @@
     "static/media/teslaLogo.png": "/shoppingcart/static/media/teslaLogo.e3a756f2ce923ff1d847.png",
     "static/media/Accessories.avif": "/shoppingcart/static/media/Accessories.213da96bca284708db1f.avif",
     "index.html": "/shoppingcart/index.html",
-    "main.ed2d624b.css.map": "/shoppingcart/static/css/main.ed2d624b.css.map",
-    "main.bdf6888c.js.map": "/shoppingcart/static/js/main.bdf6888c.js.map"
+    "main.93cf92c5.css.map": "/shoppingcart/static/css/main.93cf92c5.css.map",
+    "main.9a4a69b4.js.map": "/shoppingcart/static/js/main.9a4a69b4.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed2d624b.css",
-    "static/js/main.bdf6888c.js"
+    "static/css/main.93cf92c5.css",
+    "static/js/main.9a4a69b4.js"
   ]
 }
