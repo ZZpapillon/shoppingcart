@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/shoppingcart/static/css/main.ed2d624b.css",
+    "main.js": "/shoppingcart/static/js/main.bdf6888c.js",
+    "static/media/videoplayback.mp4": "/shoppingcart/static/media/videoplayback.e69b4a183036d84a66a2.mp4",
+    "static/media/contact.mp4": "/shoppingcart/static/media/contact.20fb5494164d333898ed.mp4",
+    "static/media/about.mp4": "/shoppingcart/static/media/about.933e420b025e0153f02e.mp4",
+    "static/media/SolarRoof.avif": "/shoppingcart/static/media/SolarRoof.d00e042ea6b3c4598f25.avif",
+    "static/media/solar.avif": "/shoppingcart/static/media/solar.47d54de71d17524f450e.avif",
+    "static/media/car1.avif": "/shoppingcart/static/media/car1.0a2b7efa372ef903049e.avif",
+    "static/media/car2.avif": "/shoppingcart/static/media/car2.52926425e2dd24eaee2e.avif",
+    "static/media/Powerwall.avif": "/shoppingcart/static/media/Powerwall.e3b8f085a922458a274f.avif",
+    "static/media/car4.avif": "/shoppingcart/static/media/car4.d693d76ef3226f18c903.avif",
+    "static/media/car3.avif": "/shoppingcart/static/media/car3.1020ca0224b52d81cdc9.avif",
+    "static/media/teslaLogo.png": "/shoppingcart/static/media/teslaLogo.e3a756f2ce923ff1d847.png",
+    "static/media/Accessories.avif": "/shoppingcart/static/media/Accessories.213da96bca284708db1f.avif",
+    "index.html": "/shoppingcart/index.html",
+    "main.ed2d624b.css.map": "/shoppingcart/static/css/main.ed2d624b.css.map",
+    "main.bdf6888c.js.map": "/shoppingcart/static/js/main.bdf6888c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed2d624b.css",
+    "static/js/main.bdf6888c.js"
+  ]
+}
