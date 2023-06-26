@@ -134,7 +134,7 @@ const [isScrolling, setIsScrolling] = useState(false);
       container.removeEventListener('scroll', handleScroll);
       clearTimeout(timeoutId);
     };
-  }, []);
+  }, );
 
   const smoothScroll = (element, targetPosition, duration = 2000) => {
     const startPosition = element.scrollTop;

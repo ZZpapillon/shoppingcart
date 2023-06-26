@@ -32,7 +32,7 @@ function ShoppingCartCheckout({items, setItems, onClose, showSuccessMessage, set
   };
   useEffect(() => {
     calculateTotalPrice();
-  }, [items]);
+  }, );
 
 const calculateTotalPrice = () => {
   let totalPrice = 0;
