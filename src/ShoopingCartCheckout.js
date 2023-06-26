@@ -1,10 +1,13 @@
 import React, { useState,useEffect } from 'react';
-import { Button, Modal, Card } from 'react-bootstrap';
+import { Button, Modal, Card,  } from 'react-bootstrap';
 
 
-function ShoppingCartCheckout({items, setItems, onClose}) {
+function ShoppingCartCheckout({items, setItems, onClose, showSuccessMessage, setShowSuccessMessage}) {
   const [showModal, setShowModal] = useState(true);
+   
+
   
+
 
   
 
@@ -24,6 +27,8 @@ function ShoppingCartCheckout({items, setItems, onClose}) {
     onClose()
     setItems([]);
     setShowModal(false);
+    setShowSuccessMessage(true)
+    console.log('yes')
   };
   useEffect(() => {
     calculateTotalPrice();
@@ -71,43 +76,40 @@ const decrementQuantity = (itemIndex) => {
           
 
           return (
-            <Card key={index} className="mb-3 custom-card">
-              {index === itemIndex && (
-                <>
-                  <Card.Body className="d-flex justify-content-between align-items-center">
-                    <div className="d-flex align-items-start justify-items-start">
-                      <img
-                        src={item.image}
-                        alt={item.name}
-                        className="me-3"
-                        style={{
-                          objectFit: 'cover',
-                          height: '15rem',
-                          width: '25rem',
-                          border: '2px solid white'
-                        }}
-                      />
-                      <div>
-                        <Card.Title>{item.name}</Card.Title>
-                        <Card.Text>Price: ${fullPrice}</Card.Text>
-                        < button className="btn btn-secondary btn-sm ms-1" disabled={item.quantity === 1} onClick={() => decrementQuantity(itemIndex)}>
-                          -
-                        </button>
-                        <span className='m-2'>{item.quantity}</span>
-                        <button className="btn btn-secondary btn-sm ms-1" onClick={() => incrementQuantity(itemIndex)}>
-                          +
-                        </button>
-                      </div>
-                    </div>
-                    <div className="d-flex align-items-center">
-                      <Button className="m-2 align-self-end" style={{border: '0.5px solid white'}} variant="danger" onClick={() => removeItemFromCart(itemIndex)}>
-                        Delete
-                      </Button>
-                    </div>
-                  </Card.Body>
-                </>
-              )}
-            </Card>
+           <Card key={index} className="mb-3 custom-card">
+  {index === itemIndex && (
+    <Card.Body>
+      <div className="d-flex align-items-start justify-items-start">
+        <img
+          src={item.image}
+          alt={item.name}
+          className="me-3"
+        />
+        <div>
+          <Card.Title>{item.name}</Card.Title>
+          <Card.Text>Price: ${fullPrice}</Card.Text>
+          <div className="d-flex quantity">
+            <button className="btn btn-secondary btn-sm" disabled={item.quantity === 1} onClick={() => decrementQuantity(itemIndex)}>
+              -
+            </button>
+            <span className="m-2">{item.quantity}</span>
+            <button className="btn btn-secondary btn-sm" onClick={() => incrementQuantity(itemIndex)}>
+              +
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className="d-flex delete-btn">
+         <div className="delete-btn-inner">
+        <Button variant="danger" onClick={() => removeItemFromCart(itemIndex)}>
+          Delete
+        </Button>
+      </div>
+      </div>
+    </Card.Body>
+  )}
+</Card>
+
           );
         })
       )}
@@ -122,7 +124,11 @@ const decrementQuantity = (itemIndex) => {
       </Button>
     </Modal.Footer>
   </Modal>
-</div>
+ 
+
+    </div>
+
+
 
 
   );
