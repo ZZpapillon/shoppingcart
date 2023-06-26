@@ -345,7 +345,7 @@ filter: brightness(1.08) contrast(1.02);
 
   .custom-card .delete-btn .delete-btn-inner {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
   }
 
   .custom-card .delete-btn .delete-btn-inner .btn {
