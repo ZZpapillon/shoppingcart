@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import AboutVideo from './accessories/about.mp4';
-import Fade from 'react-reveal/Fade';
+
 
 
 function About() {
