@@ -10,7 +10,7 @@ function About() {
       <Container fluid>
         <Row>
           <Col md={6} className="about-content">
-            <Fade left>
+           
               <div className="about-content-wrapper">
                 <h2>About Tesla</h2>
                 <p>
@@ -33,14 +33,14 @@ function About() {
                   <li>Autonomy: Tesla is driving the development of autonomous driving technology to make transportation safer and more efficient.</li>
                 </ul>
               </div>
-            </Fade>
+          
           </Col>
           <Col md={6} className="about-image">
-            <Fade right>
+           
               <video autoPlay muted loop style={{ maxWidth: '100%' }}>
                 <source src={AboutVideo} type="video/mp4" />
               </video>
-            </Fade>
+            
           </Col>
         </Row>
       </Container>

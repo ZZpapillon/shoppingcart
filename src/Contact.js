@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import ContactVideo from './accessories/contact.mp4';
-import Fade from 'react-reveal/Fade';
+
 
 function Contact() {
   const [showNotification, setShowNotification] = useState(false);
@@ -31,7 +31,7 @@ function Contact() {
             
           </Col>
           <Col md={6} className="contact-content">
-            <Fade right>
+           
               <div>
                 <h2>Contact Us</h2>
                 <p>
@@ -58,7 +58,7 @@ function Contact() {
                   </Alert>
                 )}
               </div>
-            </Fade>
+            
           </Col>
         </Row>
       </Container>
