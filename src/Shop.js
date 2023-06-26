@@ -275,7 +275,7 @@ useEffect(() => {
         className="px-1 py-2 add-to-cart-button d-inline-block mt-5"
         variant="outline-light btn-lg"
         onClick={handleAddClick}
-        style={{ fontSize: '2rem', border: '3px solid white', position: 'absolute',left: '44%', top: '67vh' }}
+        style={{ fontSize: '2rem', border: '3px solid white', position: 'absolute',left: '43.7%', top: '67vh' }}
         disabled={isScrolling}     
      >
         Add to Cart

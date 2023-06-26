@@ -1,6 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-import { Container, Button,Row,Col } from 'react-bootstrap';
+import { Container, Row,Col } from 'react-bootstrap';
 import videoSource from './accessories/videoplayback.mp4'
 
 function App() {
@@ -26,13 +27,9 @@ function App() {
           </Row>
           <Row className="justify-content-center mt-5">
             <Col xs={12} lg="auto" className="text-center">
-              <Button
-                variant="outline-light btn-lg"
-                href="/shop"
-                className="px-4 py-3 fs-2 mt-4"
-              >
-                Go to Shop
-              </Button>
+              <NavLink to="/shop" activeClassName="active-link" className="btn btn-outline-light btn-lg px-4 py-3 fs-2 mt-4">
+        Go to Shop
+      </NavLink>
             </Col>
           </Row>
         </Container>

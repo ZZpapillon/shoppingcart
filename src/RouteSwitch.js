@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route,  NavLink} from "react-router-dom";
+import { HashRouter, Routes, Route,  NavLink} from "react-router-dom";
 import App from "./App";
 import './App.css'
 import teslaName from './accessories/teslaname.png'
@@ -17,7 +17,7 @@ const RouteSwitch = () => {
   };
    
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="app-container">
       
       
@@ -64,7 +64,7 @@ const RouteSwitch = () => {
         </Container>
       </footer>
     </div>
-     </BrowserRouter>
+     </HashRouter>
   );
 };
 
