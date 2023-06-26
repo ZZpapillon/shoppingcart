@@ -8,14 +8,20 @@ import { Navbar, Nav, Container} from 'react-bootstrap';
 import About from './About'
 import Shop from "./Shop";
 import Contact from './Contact'
-
+import { useState } from 'react';
 const RouteSwitch = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleNavItemClick = () => {
+    setOpen(false);
+  };
+   
   return (
     <BrowserRouter>
       <div className="app-container">
       
       
-      <Navbar bg="black" variant="dark" className="navbar-fixed">
+      <Navbar bg="black" variant="dark" expand="md" className="navbar-fixed">
         <div className="navbar-content">
           <Navbar.Brand as={NavLink} to="/" className="ps-3">
             <img src={teslaLogo} alt="Logo 1" style={{ width: '80px', height: '90px', paddingTop: '25px'}} />
@@ -23,17 +29,22 @@ const RouteSwitch = () => {
           <div className="tesla-name">
             <img src={teslaName} alt="Logo 2" style={{ width: '100px', height: '100px', paddingTop: '5px' }} />
           </div>
-          <Nav className="pe-4">
-                <Nav.Link as={NavLink} to="/shop" className="active-link">
+          <div>
+          <Navbar.Toggle aria-controls="navbar-collapse" onClick={() => setOpen(!open)} />
+      <Navbar.Collapse   id="navbar-collapse" in={open}>
+        <Nav className="pe-4" onClick={handleNavItemClick}>
+          <Nav.Link as={NavLink} to="/shop" className="active-link">
             Shop
           </Nav.Link>
-            <Nav.Link as={NavLink} to="/about" className="active-link">
+          <Nav.Link as={NavLink} to="/about" className="active-link">
             About
           </Nav.Link>
           <Nav.Link as={NavLink} to="/contact" className="active-link">
             Contact
           </Nav.Link>
-          </Nav>
+        </Nav>
+      </Navbar.Collapse>
+      </div>
         </div>
       </Navbar>
     

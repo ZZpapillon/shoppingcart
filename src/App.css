@@ -10,7 +10,10 @@ body,
   width: 100%;
   z-index: 100;
 }
-
+.tesla-name img {
+  
+  margin-left: 5vw;
+}
 footer {
   position: fixed;
   bottom: 0;
@@ -70,7 +73,8 @@ footer {
   min-width: 100%;
   min-height: 100%;
   /* filter: blur(2px); */
-  
+  object-fit: contain;
+  object-position: center;
   
 }
 .backgroundImage{
@@ -109,12 +113,7 @@ filter: brightness(1.08) contrast(1.02);
   /* Adjust the height value as needed */
 }
 
-@media (max-width: 576px) {
-  .navbar-fixed {
-    height: 60px;
-    /* Adjust the height value for smaller screens */
-  }
-}
+
 @media (max-width: 576px) {
   .experience-tesla-heading {
     font-size: 3.2rem !important;
@@ -149,6 +148,47 @@ filter: brightness(1.08) contrast(1.02);
   justify-content: space-between;
   width: 100%;
   
+}
+@media (max-width: 768px) {
+  .navbar-fixed {
+  position: relative;
+    width: 100%;
+    z-index: 999;
+    padding: 0!important;
+    margin-top: 0!important;
+   
+  }
+
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -2vh;
+    margin-right: 3vw;
+    
+  }
+
+  
+  .navbar-collapse {
+    position: fixed!important;
+    top: 60px;
+    right: 3vw;
+    width: fit-content!important;
+    background-color: black;
+    padding: 5px!important;
+    z-index: 1001!important;
+    
+    
+  }
+
+  .navbar-collapse .nav-link {
+    display: block;
+    text-align: start;
+    z-index: 9999;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    color: #fff!important;
+  }
 }
 /* .tesla-name {
   display: flex;
